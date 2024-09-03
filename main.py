@@ -12,6 +12,9 @@ from werkzeug.security import generate_password_hash, check_password_hash
 # Import your forms from the forms.py
 from forms import *
 import os
+from sqlalchemy import create_engine
+
+
 
 
 
@@ -41,7 +44,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_URI","sqlite:///posts
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
 
-
+engine = create_engine(os.environ.get("DB_URI","sqlite:///posts.db"))
 # CONFIGURE TABLES
 class BlogPost(db.Model):
     __tablename__ = "blog_posts"
