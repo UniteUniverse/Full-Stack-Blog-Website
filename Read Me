@@ -1,0 +1,44 @@
+Full-Stack Blog Website
+This project is a full-stack web application that allows users to create, edit, and view blog posts. It is built using Flask for the backend and SQLite for the database, with a responsive frontend.
+
+Features
+User registration and authentication.
+Create, edit, and delete blog posts.
+View a list of all blog posts.
+Comment on blog posts.
+Responsive design for mobile and desktop.
+Technologies Used
+Python: The core programming language used for the backend.
+Flask: A lightweight WSGI web application framework used to build the web app.
+SQLite: A C library that provides a lightweight disk-based database.
+HTML/CSS: For structuring and styling the web pages.
+Bootstrap: For responsive design and styling.
+Jinja2: For templating in Flask.
+Flask-Login: For managing user sessions.
+Installation
+Clone the repository:
+git clone https://github.com/UniteUniverse/Full-Stack-Blog-Website.git
+cd Full-Stack-Blog-Website
+
+Create a virtual environment and activate it:
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+Install the required packages:
+pip install -r requirements.txt
+
+Run the application:
+flask run
+
+Usage
+Open your web browser and go to http://127.0.0.1:5000/.
+Register a new user account.
+Log in with your credentials.
+Create, edit, and view blog posts.
+Project Structure
+app.py: The main Flask application file.
+templates/: Contains the HTML templates.
+static/: Contains static files like CSS and images.
+users.db: The SQLite database file.
+Author
+Pratyush Kumar Jha
